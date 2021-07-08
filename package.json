@@ -21,7 +21,13 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "globals": {
+      "page": true,
+      "browser": true,
+      "context": true,
+      "jestPuppeteer": true
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-puppeteer": "^5.0.4",
+    "puppeteer": "^10.1.0"
   }
 }
