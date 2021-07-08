@@ -21,9 +21,9 @@ beforeAll(async () => {
     browser.close();
   });
 
-  describe("Login", () => {
-    test("should have disabled submit button if nothing was entered in form", async () => {
-        await page.goto("http://localhost:3000/auth/sign-in");
+  describe("check link", () => {
+    test("check text inside link", async () => {
+        await page.goto("http://localhost:3001/");
         await page.waitForSelector(linkbtn);
         expect(linkbtn).toBeTruthy();
       });
