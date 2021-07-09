@@ -23,7 +23,7 @@ beforeAll(async () => {
 
   describe("check link", () => {
     test("check text inside link", async () => {
-        await page.goto("http://localhost:3001/");
+        await page.goto("http://localhost:3000/");
         await page.waitForSelector(linkbtn);
         expect(linkbtn).toBeTruthy();
       });
