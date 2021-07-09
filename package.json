@@ -16,6 +16,8 @@
     "build": "react-scripts build",
     "test": "jest",
     "test-watch": "jest --watchAll",
+    "test:integration": "jest -c jest-browser-tests.config.js",
+    "ci:integration": "jest -c jest-browser-tests.config.js --runInBand",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
